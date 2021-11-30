@@ -10,7 +10,7 @@ body {
 }
 #numBoxes {
   width: 100vw;
-  height: 75px;
+  height: 100vh;
   margin-top: 40px;
 }
 #flexBox {
@@ -18,6 +18,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-content: center;
+  justify-items: flex-end;
   list-style: none;
   margin-right: 70px;
   flex-wrap: wrap;
@@ -52,17 +53,9 @@ p {
   color: #333;
 }
 
-@media screen and (max-width: 1000px) {
-  #flexBox {
-    row-gap: 20%;
-  }
-  #numBoxes {
-    margin-top: 200px;
-  }
-}
 @media screen and (max-width: 760px) {
   #numBoxes {
-    margin-top: 150px;
+    margin-top: 20px;
   }
   .box {
     height: 60px;
@@ -76,6 +69,6 @@ p {
 }
 @media screen and (max-width: 480px) {
   #numBoxes {
-    margin-top: 75px;
+    margin-top: 10px;
   }
 }
