@@ -1,0 +1,80 @@
+body {
+  font-family: fantasy;
+  background-image: url(./images/drums-10piece.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
+  background-position-y: 10px;
+  overflow-x: hidden;
+}
+#numBoxes {
+  width: 100vw;
+  height: 75px;
+  margin-top: 280px;
+}
+#flexBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  list-style: none;
+  margin-right: 70px;
+  flex-wrap: wrap;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  background: linear-gradient(
+    to bottom,
+    #333 0%,
+    #333 50%,
+    #999 50%,
+    #999 100%
+  );
+  border-radius: 10%;
+  border: 3px solid black;
+  padding-top: 12.5px;
+  text-align: center;
+  color: #999;
+  box-sizing: border-box;
+}
+hr {
+  margin-top: 15px;
+  font-weight: 300;
+  color: black;
+}
+.pointer {
+  cursor: pointer;
+}
+p {
+  margin-top: -0px;
+  color: #333;
+}
+
+@media screen and (max-width: 1000px) {
+  #flexBox {
+    row-gap: 20%;
+  }
+  #numBoxes {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 760px) {
+  #numBoxes {
+    margin-top: 150px;
+  }
+  .box {
+    height: 60px;
+    width: 60px;
+    font-size: 12px;
+    padding-top: 6px;
+  }
+  hr {
+    margin-top: 4px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #numBoxes {
+    margin-top: 75px;
+  }
+}
