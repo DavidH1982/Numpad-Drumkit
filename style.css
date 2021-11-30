@@ -1,16 +1,17 @@
 body {
   font-family: fantasy;
-  background-image: url(./images/drums-10piece.jpg);
+  background-image: url(./images/drumkit.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 90%;
-  background-position-y: 10px;
+  background-size: 60%;
+  background-position-y: 100px;
   overflow-x: hidden;
+  background-color: lightgrey;
 }
 #numBoxes {
   width: 100vw;
   height: 75px;
-  margin-top: 280px;
+  margin-top: 40px;
 }
 #flexBox {
   display: flex;
