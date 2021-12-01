@@ -6,6 +6,7 @@ body {
   background-size: 60%;
   background-position-y: 100px;
   overflow-x: hidden;
+  overflow-y: hidden;
   background-color: lightgrey;
 }
 #numBoxes {

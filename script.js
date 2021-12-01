@@ -1,49 +1,105 @@
+const boomSound = document.getElementById("boomSound");
+const clapSound = document.getElementById("clapSound");
+const hihatSound = document.getElementById("hihatSound");
+const kickSound = document.getElementById("kickSound");
+const openSound = document.getElementById("openhatSound");
+const rideSound = document.getElementById("rideSound");
+const snareSound = document.getElementById("snareSound");
+const tinkSound = document.getElementById("tinkSound");
+const tomSound = document.getElementById("tomSound");
+
+let playAudio = [
+  boomSound,
+  clapSound,
+  hihatSound,
+  kickSound,
+  openSound,
+  rideSound,
+  snareSound,
+  tinkSound,
+  tomSound,
+];
+
 window.addEventListener("keypress", (event) => {
   if (event.keyCode == 49) {
-    document.getElementById("boomSound").play();
+    playAudio[0].play();
+    playAudio[0].currentTime = 0;
   } else if (event.keyCode == 50) {
-    document.getElementById("clapSound").play();
+    playAudio[1].play();
+    playAudio[1].currentTime = 0;
   } else if (event.keyCode == 51) {
-    document.getElementById("hihatSound").play();
+    playAudio[2].play();
+    playAudio[2].currentTime = 0;
   } else if (event.keyCode == 52) {
-    document.getElementById("kickSound").play();
+    playAudio[3].play();
+    playAudio[3].currentTime = 0;
   } else if (event.keyCode == 53) {
-    document.getElementById("openhatSound").play();
+    playAudio[4].play();
+    playAudio[4].currentTime = 0;
   } else if (event.keyCode == 54) {
-    document.getElementById("rideSound").play();
+    playAudio[5].play();
+    playAudio[5].currentTime = 0;
   } else if (event.keyCode == 55) {
-    document.getElementById("snareSound").play();
+    playAudio[6].play();
+    playAudio[6].currentTime = 0;
   } else if (event.keyCode == 56) {
-    document.getElementById("tinkSound").play();
+    playAudio[7].play();
+    playAudio[7].currentTime = 0;
   } else if (event.keyCode == 57) {
-    document.getElementById("tomSound").play();
+    playAudio[8].play();
+    playAudio[8].currentTime = 0;
   }
 });
 
 document.getElementById("Num1").addEventListener("click", () => {
-  document.getElementById("boomSound").play();
+  playAudio[0].play();
+  playAudio[0].currentTime = 0;
 });
 document.getElementById("Num2").addEventListener("click", () => {
-  document.getElementById("clapSound").play();
+  playAudio[1].play();
+  playAudio[1].currentTime = 0;
 });
 document.getElementById("Num3").addEventListener("click", () => {
-  document.getElementById("hihatSound").play();
+  playAudio[2].play();
+  playAudio[2].currentTime = 0;
 });
 document.getElementById("Num4").addEventListener("click", () => {
-  document.getElementById("kickSound").play();
+  playAudio[3].play();
+  playAudio[3].currentTime = 0;
 });
 document.getElementById("Num5").addEventListener("click", () => {
-  document.getElementById("openhatSound").play();
+  playAudio[4].play();
+  playAudio[4].currentTime = 0;
 });
 document.getElementById("Num6").addEventListener("click", () => {
-  document.getElementById("rideSound").play();
+  playAudio[5].play();
+  playAudio[5].currentTime = 0;
 });
 document.getElementById("Num7").addEventListener("click", () => {
-  document.getElementById("snareSound").play();
+  playAudio[6].play();
+  playAudio[6].currentTime = 0;
 });
 document.getElementById("Num8").addEventListener("click", () => {
-  document.getElementById("tinkSound").play();
+  playAudio[7].play();
+  playAudio[7].currentTime = 0;
 });
 document.getElementById("Num9").addEventListener("click", () => {
-  document.getElementById("tomSound").play();
+  playAudio[8].play();
+  playAudio[8].currentTime = 0;
 });
+
+// code from https://blog.cotten.io/playing-audio-resources-simultaneously-in-javascript-546ec4d6216a
+// function Switcher(audio_uri, num) {
+// 	this.channels = [];
+// 	this.num = num;
+// 	this.index = 0;
+
+// 	for (var i = 0; i < num; i++) {
+// 		this.channels.push(new Channel(audio_uri));
+// 	}
+// }
+
+// Switcher.prototype.play = function() {
+// 	this.channels[this.index++].play();
+// 	this.index = this.index < this.num ? this.index : 0;
+// }
