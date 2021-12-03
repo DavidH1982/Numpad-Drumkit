@@ -87,19 +87,36 @@ document.getElementById("Num9").addEventListener("click", () => {
   playAudio[8].play();
   playAudio[8].currentTime = 0;
 });
-
-// code from https://blog.cotten.io/playing-audio-resources-simultaneously-in-javascript-546ec4d6216a
-// function Switcher(audio_uri, num) {
-// 	this.channels = [];
-// 	this.num = num;
-// 	this.index = 0;
-
-// 	for (var i = 0; i < num; i++) {
-// 		this.channels.push(new Channel(audio_uri));
-// 	}
-// }
-
-// Switcher.prototype.play = function() {
-// 	this.channels[this.index++].play();
-// 	this.index = this.index < this.num ? this.index : 0;
-// }
+document.getElementById("snareDrum").addEventListener("click", () => {
+  playAudio[1].play();
+  playAudio[1].currentTime = 0;
+});
+document.getElementById("ride").addEventListener("click", () => {
+  playAudio[5].play();
+  playAudio[5].currentTime = 0;
+});
+document.getElementById("tomDrum").addEventListener("click", () => {
+  playAudio[3].play();
+  playAudio[3].currentTime = 0;
+});
+document.getElementById("kickDrum").addEventListener("click", () => {
+  playAudio[0].play();
+  playAudio[0].currentTime = 0;
+});
+document.getElementById("standDrum").addEventListener("click", () => {
+  playAudio[8].play();
+  playAudio[8].currentTime = 0;
+});
+document.getElementById("smallSnare").addEventListener("click", () => {
+  playAudio[6].play();
+  playAudio[6].currentTime = 0;
+});
+document.getElementById("hihat").addEventListener("click", () => {
+  playAudio[2].play();
+  playAudio[2].currentTime = 0;
+});
+anime({
+  targets: "#snareDrum",
+  translateX: 250,
+  duration: 800,
+});

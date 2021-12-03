@@ -1,18 +1,19 @@
 body {
   font-family: fantasy;
-  background-image: url(./images/drumkit.png);
+  /* background-image: url(./images/drumkit.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60%;
-  background-position-y: 100px;
+  background-position-y: 100px; */
   overflow-x: hidden;
   overflow-y: hidden;
   background-color: lightgrey;
 }
 #numBoxes {
   width: 100vw;
-  height: 100vh;
+  height: 20hv;
   margin-top: 40px;
+  z-index: 99;
 }
 #flexBox {
   display: flex;
@@ -53,7 +54,94 @@ p {
   margin-top: -0px;
   color: #333;
 }
-
+#drumKit {
+  position: absolute;
+  top: 200px;
+  left: -0.5vw;
+  height: 150vh;
+  width: 150vw;
+  z-index: 0;
+}
+#snareContainer {
+  position: relative;
+  top: 20px;
+  left: 760px;
+  height: 150px;
+  width: 150px;
+  z-index: 95;
+}
+#snareDrum {
+  height: 150px;
+}
+#rideContainer {
+  position: relative;
+  top: -250px;
+  left: 850px;
+  height: 600px;
+  width: 50px;
+  z-index: 85;
+}
+#ride {
+  height: 550px;
+}
+#tomContainer {
+  position: relative;
+  top: -595px;
+  left: 855px;
+  height: 320px;
+  width: 200px;
+  z-index: 99;
+}
+#tomDrum {
+  height: 320px;
+}
+#kickContainer {
+  position: relative;
+  top: -950px;
+  left: 620px;
+  height: 400px;
+  width: 400px;
+  z-index: 90;
+}
+#kickDrum {
+  height: 400px;
+}
+#standDrumContainer {
+  position: relative;
+  top: -1320px;
+  left: 510px;
+  height: 300px;
+  width: 200px;
+  z-index: 92;
+}
+#standDrum {
+  height: 300px;
+}
+#smallSnareContainer {
+  position: relative;
+  top: -1730px;
+  left: 610px;
+  height: 130px;
+  width: 150px;
+  z-index: 91;
+}
+#smallSnare {
+  height: 130px;
+}
+#hihatContainer {
+  position: relative;
+  top: -1940px;
+  left: 300px;
+  height: 670px;
+  width: 100px;
+  z-index: 93;
+}
+#hihat {
+  height: 510px;
+}
+.instrument:hover {
+  cursor: pointer;
+}
 @media screen and (max-width: 760px) {
   #numBoxes {
     margin-top: 20px;
