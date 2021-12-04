@@ -65,7 +65,7 @@ p {
 #snareContainer {
   position: relative;
   top: 20px;
-  left: 760px;
+  left: 1760px;
   height: 150px;
   width: 150px;
   z-index: 95;
@@ -87,7 +87,7 @@ p {
 #tomContainer {
   position: relative;
   top: -595px;
-  left: 855px;
+  left: 1855px;
   height: 320px;
   width: 200px;
   z-index: 99;
@@ -97,7 +97,7 @@ p {
 }
 #kickContainer {
   position: relative;
-  top: -950px;
+  top: 50px;
   left: 620px;
   height: 400px;
   width: 400px;
@@ -109,7 +109,7 @@ p {
 #standDrumContainer {
   position: relative;
   top: -1320px;
-  left: 510px;
+  left: -490px;
   height: 300px;
   width: 200px;
   z-index: 92;
@@ -120,7 +120,7 @@ p {
 #smallSnareContainer {
   position: relative;
   top: -1730px;
-  left: 610px;
+  left: -390px;
   height: 130px;
   width: 150px;
   z-index: 91;
