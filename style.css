@@ -10,6 +10,8 @@ body {
   background-color: lightgrey;
 }
 #numBoxes {
+  position: absolute;
+  top: -1000px;
   width: 100vw;
   height: 20hv;
   margin-top: 40px;
@@ -75,8 +77,8 @@ p {
 }
 #rideContainer {
   position: relative;
-  top: -250px;
-  left: 850px;
+  top: -1250px;
+  left: 1850px;
   height: 600px;
   width: 50px;
   z-index: 85;
@@ -86,7 +88,7 @@ p {
 }
 #tomContainer {
   position: relative;
-  top: -595px;
+  top: 405px;
   left: 1855px;
   height: 320px;
   width: 200px;
@@ -108,7 +110,7 @@ p {
 }
 #standDrumContainer {
   position: relative;
-  top: -1320px;
+  top: -320px;
   left: -490px;
   height: 300px;
   width: 200px;
@@ -130,8 +132,8 @@ p {
 }
 #hihatContainer {
   position: relative;
-  top: -1940px;
-  left: 300px;
+  top: -2940px;
+  left: -700px;
   height: 670px;
   width: 100px;
   z-index: 93;
